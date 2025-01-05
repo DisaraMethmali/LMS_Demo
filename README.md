@@ -17,22 +17,9 @@ source venv/bin/activate          # Activate virtual environment (for Linux/Mac)
 # venv\Scripts\activate
 pip install Flask flask-cors      # Install Flask and CORS
 
-# Create a basic Flask app
-echo "from flask import Flask, jsonify
-from flask_cors import CORS
-
-app = Flask(__name__)
-CORS(app)
-
-@app.route('/api', methods=['GET'])
-def hello():
-    return jsonify({'message': 'Hello from Flask!'})
-
-if __name__ == '__main__':
-    app.run(debug=True)" > app.py
 
 # Run Flask app
-python app.py
+flask run
 ```
 
 ### 2. **Setting Up React + Vite Frontend**
@@ -67,7 +54,7 @@ npm run dev
 
 ```bash
 # Run Flask backend
-python app.py
+flask run
 
 # Run React frontend
 npm run dev
