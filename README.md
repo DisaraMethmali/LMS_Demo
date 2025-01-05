@@ -11,11 +11,9 @@ cd flask-react-vite
 # Create and set up Flask backend
 mkdir backend
 cd backend
-python -m venv venv               # Create virtual environment
-source venv/bin/activate          # Activate virtual environment (for Linux/Mac)
-# For Windows
-# venv\Scripts\activate
-pip install Flask flask-cors      # Install Flask and CORS
+
+# Install Flask and CORS
+pip install Flask flask-cors      
 
 Replace username, password, and lms_demo with your actual MySQL username, password, and the database name you created.
 
