@@ -17,6 +17,7 @@ source venv/bin/activate          # Activate virtual environment (for Linux/Mac)
 # venv\Scripts\activate
 pip install Flask flask-cors      # Install Flask and CORS
 
+Replace username, password, and lms_demo with your actual MySQL username, password, and the database name you created.
 
 # Run Flask app
 flask run
